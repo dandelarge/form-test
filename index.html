@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is a static form</title>
+</head>
+<body>
+    <h1>Real quick form to test the password</h1>
+    <form action="">
+        <div>
+            <label for="pass">User</label>
+            <input type="text" name="user" id="user">
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="text" name="pass" id="pass">
+        </div>
+        <div>
+            <button type="submit" id="sendForm" disabled>Send</button>
+        </div>
+
+        <div>
+            <h3>Da rules</h3>
+            <ul>
+                <li><input type="checkbox" class="rule" name="" id="consecutiveChars"><span>must contain at least 3 consecutive characters</span></li>
+                <li><input type="checkbox" class="rule" name="" id="forbidenChars"><span>must not contain the following characters: "i, O, l"</span></li>
+                <li><input type="checkbox" class="rule" name="" id="nonOverlappingChars"><span>must contain at least two non-overlapping continuous letters like "aa" or "rr"</span></li>
+                <li><input type="checkbox" class="rule" name="" id="onlyLowerCase"><span>must not be longer than 32 characters</span></li>
+                <li><input type="checkbox" class="rule" name="" id="textLength"><span>must contain only lowercase characters</span></li>
+            </ul>
+        </div>
+    </form>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
